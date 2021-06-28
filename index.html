@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Dom</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="index,follow">
+	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="container">
+	<header class="title">
+		<h1>Reproductor Audio App</h1>
+	</header>
+	<main class="content">
+		<aside class="content__list">
+			<label for="find">Buscar</label>
+			<input text="search" class="input__form" id="find" autofocus="autofocus" placeholder="Ingresar Cancion">
+			<div class="songs__list">
+				<!-- Render songs -->
+			</div>
+		</aside>
+		<div class="content__render">
+			<img class="image__render" alt="autor-music">
+			<div class="song__spectre">
+				<canvas class="canvas__render"></canvas>
+			</div>
+			<div class="song__render">
+				<div class="song__line">
+					<audio class="d--none" id="audio"></audio>
+					<input type="range" class="progress__bar" id="audio-bar" value="0" min="0" max="100">
+				</div>
+				<div class="song__controls">
+					<div class="song__autor">
+						<i class='song__box--icon bx bx-music bx-border bx-md'></i>
+						<div>
+							<h4 id="songRender"></h4>
+							<p id="songRender" class="text--truncate"></p>
+						</div>
+					</div>
+					<div class="song__controls--group">
+						<i class='bx bx-skip-previous bx-sm bx-border btn__control'></i>
+						<i class='bx bx-play bx-sm bx-border btn__control'></i>
+						<i class='bx bx-skip-next bx-sm bx-border btn__control'></i>
+					</div>
+					<div class="song__time" id="songRender"><b> 00:00</b></div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<button class="btn__theme">
+		<i class='bx bx-moon bx-sm' ></i>
+		<!-- <i class='bx bx-sun bx-md'></i> -->
+	</button>
+	<script type="module" src="app.js"></script>
+</body>
+</html>
