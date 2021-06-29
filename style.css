@@ -440,7 +440,7 @@ button:hover{
 	}
 
 	.content__render{
-		height: 50vh;
+		height: 100vh;
 	}
 }
 
@@ -451,6 +451,18 @@ button:hover{
 
 	.content{
 		padding: var(--mp-0);
+	}
+	
+	.canvas__render{
+		height: 8rem;
+	}
+
+	.content__render{
+		height: 50vh;
+	}
+
+	.song__box--text{
+		display: grid;
 	}
 
 	.song__controls{
@@ -465,10 +477,6 @@ button:hover{
 		position: absolute;
 		top: -2rem;
     	right: 1rem;
-	}
-
-	.text--truncate{
-		white-space: initial;
 	}
 }
 
